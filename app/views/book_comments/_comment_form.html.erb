@@ -1,0 +1,10 @@
+<div id="comment_<%= @comment.id %>">
+
+<%= form_with(model:[book,comment], remote: true) do |f| %>
+  <div id="error_explanation">
+  </div>
+
+  <%= f.text_area :content, class: "col-xs-8" %>
+  <%= f.submit "送信" %>
+<% end %>
+</div>

@@ -1,0 +1,6 @@
+<table>
+  <% comments.each do |comment| %>
+    <%= render partial: 'book_comments/comment', locals: {comment: comment} %>
+
+  <% end %>
+</table>
